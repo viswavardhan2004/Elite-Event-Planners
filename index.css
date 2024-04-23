@@ -1,0 +1,419 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+  --theme-color: #3867d6;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+}
+body{
+  background-color: white;
+}
+body {
+  background: white;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  background: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 9%;
+}
+
+.header .logo {
+  font-weight: bolder;
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.header .logo span {
+  color: var(--theme-color);
+}
+
+.header .navbar a {
+  font-size: 1.7rem;
+  color: #fff;
+  margin-left: 2rem;
+}
+
+.header .navbar a:hover {
+  color: var(--theme-color);
+}
+
+#menu-bars {
+  font-size: 3rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+.home .content {
+  text-align: center;
+  padding-top: 6rem;
+  margin: 2rem auto;
+  max-width: 70rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0px 20px;
+}
+.content-left {
+  font-size: large;
+    float: left;
+    width: 40%; /* Adjust width as needed */
+    
+    padding: 100px;
+    border: 0px solid rgb(86, 86, 146);
+    cursor: pointer;
+  }
+  
+  /* Additional styling for positioning, layout, and design can be added as required */
+  
+.login-box {
+    position: absolute;
+    top: 55%;
+    right: 0%;
+    margin-top: 20px;
+    width: 400px;
+    padding: 40px;
+    margin: 20px auto;
+    transform: translate(-50%, -55%);
+    background: rgba(0,0,0,.9);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+  .login-box button{
+    display: block;
+    margin: 10px auto;
+  }
+  
+  .login-box p:first-child {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  
+  .login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #fff;
+    font-size: 12px;
+  }
+  
+  .login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 3px
+  }
+  
+  .login-box a:hover {
+    background: #fff;
+    color: #272727;
+    border-radius: 5px;
+  }
+  
+  .login-box a span {
+    position: absolute;
+    display: block;
+  }
+  
+  .login-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #fff);
+    animation: btn-anim1 1.5s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+  
+    50%,100% {
+      left: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #fff);
+    animation: btn-anim2 1.5s linear infinite;
+    animation-delay: .375s
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+  
+    50%,100% {
+      top: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #fff);
+    animation: btn-anim3 1.5s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+  
+    50%,100% {
+      right: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #fff);
+    animation: btn-anim4 1.5s linear infinite;
+    animation-delay: 1.125s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+  
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+  
+  .login-box p:last-child {
+    color: #aaa;
+    font-size: 14px;
+  }
+  
+  .login-box a.a2 {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .login-box a.a2:hover {
+    background: transparent;
+    color: #aaa;
+    border-radius: 5px;
+  }
+
+.theme-toggler {
+  position: fixed;
+  top: 10rem;
+  right: -20rem;
+  background: #333;
+  z-index: 1000;
+  width: 20rem;
+  text-align: center;
+}
+
+.theme-toggler.active {
+  right: 0;
+}
+
+.theme-toggler h3 {
+  color: #fff;
+  padding: 1rem 0;
+  font-size: 2rem;
+}
+
+.theme-toggler .buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.theme-toggler .buttons .theme-btn {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.theme-toggler .toggle-btn {
+  position: absolute;
+  top: 0;
+  left: -5.9rem;
+  padding: 1.3rem 1.5rem;
+  background: #333;
+  cursor: pointer;
+}
+
+.theme-toggler .toggle-btn i {
+  color: #fff;
+  font-size: 3rem;
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(360deg);
+  }
+}
+
+/* media queries  */
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 1.5rem 2rem;
+  }
+
+  section {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-bars {
+    display: initial;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border-top: 0.1rem solid #222;
+    background: #333;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .fa-times {
+    transform: rotate(180deg);
+  }
+
+  .header .navbar a {
+    display: flex;
+    background: #222;
+    border-radius: 0.5rem;
+    padding: 1.3rem;
+    margin: 1.3rem;
+    font-size: 2rem;
+  }
+
+  .home .content h3 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .home .home-slider .swiper-slide {
+    width: 27rem;
+  }
+
+  .contact form .inputBox input {
+    width: 100%;
+  }
+}

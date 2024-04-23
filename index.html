@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Event Planners</title>
+    <link rel="stylesheet" href="index.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
+
+  <!--font awesome-->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+  />
+
+</head>
+<body>
+  <!-- header section starts  -->
+  <header class="header">
+    <a href="#" class="logo"><span>E</span>lite<span>E</span>vent<span>P</span>lanners</a>
+
+    <nav class="navbar">
+      <a href="index.html">Login</a>
+      <a href="GITHOME.html">home</a>
+      <a href="GITHOME.html">service</a>
+      <a href="about.html">about</a>
+      <a href="GITHOME.html">gallery</a>
+      <a href="GITHOME.html">price</a>
+      <a href="GITHOME.html">review</a>
+      <a href="11.html">contact</a>
+    </nav>
+
+    <div id="menu-bars" class="fas fa-bars"></div>
+  </header>
+
+    <!-- Your content for the right side below the header goes here -->
+    <div class="content-left">
+
+        <!-- Your content for the right side below the header goes here -->
+        <h2>Welcome to Elite Event Planners!</h2>
+        <p>Explore our services and make your events truly special.</p>
+        <p>Do you want to plan a surprise event for your friends? Because I've got all the tools and ideas to make it happen!."
+            "I'm an expert in organizing events, but I'm lost in words when I see your smile!"</p>
+    </div>
+    <div class="login-box">
+        <p>Sign Up / Login</p>
+        <form>
+          <div class="user-box">
+            <input required="" name="" type="text">
+            <label>Email</label>
+          </div>
+          <div class="user-box">
+            <input required="" name="" type="password">
+            <label>Password</label>
+          </div>
+          <div class="user-box">
+            <input required="" name="" type="password">
+            <label>Confirm Password</label>
+          </div>
+          <a href="#" onclick="redirectLogin()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Sign Up
+          </a>
+        </form>
+        <p>Already have an account? Click here to <a href="#" onclick="redirectLogin()" class="a2">Log in!</a></p>
+    </div>
+
+    <!-- Login Box (Initially Hidden) -->
+    <div id="login-box" class="login-box" style="display: none;">
+        <p>Login</p>
+        <form>
+          <div class="user-box">
+            <input required="" name="" type="text">
+            <label>Email</label>
+          </div>
+          <div class="user-box">
+            <input required="" name="" type="password">
+            <label>Password</label>
+          </div>
+          <a href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Log In
+          </a>
+        </form>
+        <p>Don't have an account? Click here to <a href="#" onclick="redirectSignUp()" class="a2">Sign up!</a></p>
+    </div>
+
+
+<section class="footer">
+    <div class="credit">
+      created by <span>Kandula</span> | all rights reserved
+    </div>
+</section>
+
+
+    <!-- JavaScript for Redirecting -->
+    <script>
+        function redirectLogin() {
+            document.getElementById('login-box').style.display = 'block';
+            document.querySelector('.login-box').style.display = 'none';
+        }
+
+        function redirectSignUp() {
+            document.getElementById('login-box').style.display = 'none';
+            document.querySelector('.login-box').style.display = 'block';
+        }
+    </script>
+    
+    <!-- theme toggler  -->
+    <div class="theme-toggler">
+      <div class="toggle-btn">
+        <i class="fas fa-cog"></i>
+      </div>
+
+      <h3>choose color</h3>
+
+      <div class="buttons">
+        <div class="theme-btn" style="background: #ccff33"></div>
+        <div class="theme-btn" style="background: #d35400"></div>
+        <div class="theme-btn" style="background: #f39c12"></div>
+        <div class="theme-btn" style="background: #1abc9c"></div>
+        <div class="theme-btn" style="background: #3498db"></div>
+        <div class="theme-btn" style="background: #9b59b6"></div>
+      </div>
+    </div>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<!--JS file-->
+<script src="app.js"></script>
+</body>
+</html>

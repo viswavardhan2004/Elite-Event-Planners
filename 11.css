@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+  --theme-color: #3867d6;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #111;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  background: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 9%;
+}
+
+.header .logo {
+  font-weight: bolder;
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.header .logo span {
+  color: var(--theme-color);
+}
+
+.header .navbar a {
+  font-size: 1.7rem;
+  color: #fff;
+  margin-left: 2rem;
+}
+
+.header .navbar a:hover {
+  color: var(--theme-color);
+}
+
+#menu-bars {
+  font-size: 3rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+.abc{
+  color: var(--theme-color);
+}
+
+
+
+
+
+.container{
+    background-color: #333;
+    color: #fff;
+    height: 75px;
+    padding-top: 10px;
+    
+}
+.navigation{
+    background-color: #666;
+}
+.content {
+    margin: 0 20px; /* Add space to the right and left of the paragraph */
+}
+.matter{
+    font-size: larger;
+    font-weight: 200;
+    padding: 10px;
+    margin: 5px;
+}
+
+
+
+.form {
+    width: 500px;;
+    --input-focus: #2d8cf0;
+    --font-color: #323232;
+    --font-color-sub: #666;
+    --bg-color: beige;
+    --main-color: black;
+    padding: 20px;
+    background: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the form horizontally */
+    justify-content: center; /* Center the form vertically */
+    gap: 20px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+}
+
+  .title {
+    color: var(--font-color);
+    font-weight: 900;
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .title span {
+    color: var(--font-color-sub);
+    font-weight: 600;
+    font-size: 17px;
+  }
+  
+  .input {
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--font-color);
+    padding: 5px 10px;
+    outline: none;
+  }
+  
+  .input::placeholder {
+    color: var(--font-color-sub);
+    opacity: 0.8;
+  }
+  
+  .input:focus {
+    border: 2px solid var(--input-focus);
+  }
+  
+  .login-with {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .button-log {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    color: var(--font-color);
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--main-color);
+  }
+  
+  .button-log:active, .button-confirm:active {
+    box-shadow: 0px 0px var(--main-color);
+    transform: translate(3px, 3px);
+  }
+
+.button-confirm,
+.button-cancel {
+    width: 120px; /* Set the width to the same size for both buttons */
+    height: 40px; /* Set the height to the same size for both buttons */
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--font-color);
+    cursor: pointer;
+}
+.button-confirm {
+    background-color: beige; /* Green color for the submit button */
+}
+
+.button-confirm:hover {
+    background-color: #28a745; /* Darker green color on hover */
+    color: white; /* Text color on hover */
+}
+
+.button-cancel {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+
+.button-cancel:hover {
+    background-color: #d9534f; /* Red color on hover */
+    color: white; /* Text color on hover */
+}
+
+.button-cancel:active {
+    box-shadow: 0 0 0 var(--main-color);
+    transform: translate(3px, 3px);
+}
+
+
+.footer {
+  background: #111;
+}
+
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.5rem;
+  padding: 1rem 0;
+  color: #fff;
+}
+
+.footer .box-container .box a {
+  display: block;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  color: #eee;
+}
+
+.footer .box-container .box a i {
+  padding-right: 0.5rem;
+  color: var(--theme-color);
+}
+
+.footer .box-container .box a:hover i {
+  padding-right: 1.5rem;
+  color: #fff;
+}
+
+.footer .credit {
+  text-align: center;
+  border-top: 0.1rem solid #222;
+  color: #fff;
+  padding: 2rem;
+  padding-top: 2.5rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.footer .credit span {
+  color: var(--theme-color);
+}
+
+
+
+
+.theme-toggler {
+  position: fixed;
+  top: 10rem;
+  right: -20rem;
+  background: #333;
+  z-index: 1000;
+  width: 20rem;
+  text-align: center;
+}
+
+.theme-toggler.active {
+  right: 0;
+}
+
+.theme-toggler h3 {
+  color: #fff;
+  padding: 1rem 0;
+  font-size: 2rem;
+}
+
+.theme-toggler .buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.theme-toggler .buttons .theme-btn {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.theme-toggler .toggle-btn {
+  position: absolute;
+  top: 0;
+  left: -5.9rem;
+  padding: 1.3rem 1.5rem;
+  background: #333;
+  cursor: pointer;
+}
+
+.theme-toggler .toggle-btn i {
+  color: #fff;
+  font-size: 3rem;
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(360deg);
+  }
+}
+
+/* media queries  */
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 1.5rem 2rem;
+  }
+
+  section {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-bars {
+    display: initial;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border-top: 0.1rem solid #222;
+    background: #333;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .fa-times {
+    transform: rotate(180deg);
+  }
+
+  .header .navbar a {
+    display: flex;
+    background: #222;
+    border-radius: 0.5rem;
+    padding: 1.3rem;
+    margin: 1.3rem;
+    font-size: 2rem;
+  }
+
+  .home .content h3 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .home .home-slider .swiper-slide {
+    width: 27rem;
+  }
+
+  .contact form .inputBox input {
+    width: 100%;
+  }
+}
